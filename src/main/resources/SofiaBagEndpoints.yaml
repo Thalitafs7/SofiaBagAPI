@@ -1,0 +1,510 @@
+_type: export
+__export_format: 4
+__export_date: 2021-10-16T02:29:46.405Z
+__export_source: insomnia.desktop.app:v2021.5.3
+resources:
+  - _id: req_51c4d30b3bd140bdba605513f21b6a15
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634063771292
+    created: 1633282998602
+    url: http://localhost:9091/api/v1/calendar
+    name: updateReminder
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "RE_1258",
+        	"reminderDate": "2021-10-12",
+        	"reminderHour": "17:10:00",
+        	"repeatType": "3",
+        	"object": {
+        		"cdRfid": "CTX1256",
+        		"name": "Repeat Type Never",
+        		"category": "Escola 2.1",
+        		"user": {
+        			"id": "DJOI208",
+        			"name": "Jason Le",
+        			"nickname": "Jale",
+        			"email": "jason_le@gmail.com",
+        			"password":"password"
+        		}
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d9613027c3b0476093be4d10bc32c3af
+    authentication: {}
+    metaSortKey: -1633282998602
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_37ef2e72e178490bbba396757902ea33
+    parentId: wrk_7bc20acbddf5470a93cbde59ae58f51f
+    modified: 1630713626185
+    created: 1630713626185
+    name: SofiaAPI
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1630713626185
+    _type: request_group
+  - _id: wrk_7bc20acbddf5470a93cbde59ae58f51f
+    parentId: null
+    modified: 1634351307797
+    created: 1621039865957
+    name: Sofia Bag Oficial
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_eae8358d604b48bda59ac18da71efe17
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634061035185
+    created: 1634000110110
+    url: http://localhost:9091/api/v1/backpack
+    name: updateObject
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cdRfid": "CTX1256",
+        	"name": "Repeat Type Never",
+        	"category": "Escola 2.1",
+        	"reminder": "2021-09-18T20:10:00",
+        	"repeatType": "2",
+        	"user": {
+        		"id": "1",
+        		"name": "nikkie",
+        		"nickname": "apelido",
+        		"email": "12@gmail.com",
+        		"password":"123465",
+        		"objects": []
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d9613027c3b0476093be4d10bc32c3af
+    authentication: {}
+    metaSortKey: -1633282886844.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9989457b740a434c825c2fe4dea3f42e
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634060990089
+    created: 1633286434411
+    url: http://localhost:9091/api/v1/user
+    name: updateUser
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "id": "DJOI208",
+            "name": "Jason Le Le Le Le Le",
+            "nickname": "Jale",
+            "email": "jason_le@gmail.com",
+            "password": "password"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d9613027c3b0476093be4d10bc32c3af
+    authentication: {}
+    metaSortKey: -1633282775087
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_42d8909404764a34b1fda95320ef9803
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634002957586
+    created: 1633282551572
+    url: http://localhost:9091/api/v1/calendar/RE_1256
+    name: deleteReminder
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1633282551572
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_92e2edca716548208b638fd081e5020d
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634002930375
+    created: 1634002930375
+    url: http://localhost:9091/api/v1/reminder/id=1&objectRfid=CTX1256
+    name: deleteObject
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632779661569.4375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_db5952dd118c440fa02b558409864461
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1633653289273
+    created: 1633287376444
+    url: http://localhost:9091/api/v1/user/4
+    name: deleteUser
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632276771566.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0c4e085403e1406494be17b95a2d7568
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1633650869106
+    created: 1631985545059
+    url: http://localhost:9091/api/v1/object/id=1&reminder=2021-09-14T10:00:00
+    name: getObjectsReminder
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "1",
+        	"reminder": "2021-09-16T20:10:00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_bfa3969e1f6746b4a8113f07cf947888
+    authentication: {}
+    metaSortKey: -1631270991561.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b9bedc031e384d4d8ab3a9a4043918c9
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634069130582
+    created: 1634003643657
+    url: http://localhost:9091/api/v1/calendar/id=DJOI208&date=2021-10-12
+    name: getReminder
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "1",
+        	"reminder": "2021-09-16T20:10:00"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_bfa3969e1f6746b4a8113f07cf947888
+    authentication: {}
+    metaSortKey: -1631236196221.0938
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_00d6a90d55354995ae16773630689606
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1633655014147
+    created: 1633650643011
+    url: http://localhost:9091/api/v1/object/1654564
+    name: getUsersObjects
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1631201400880.4375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e5f6963220df486d835a26bf96ea8d6d
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634350099962
+    created: 1633283154837
+    url: http://localhost:9091/api/v1/user/DJOI208
+    name: getUser
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTb2ZpYSBCYWcgQVBJIiwic3ViIjoiREpPSTIwOCIsImlhdCI6MTYzNDM1MDAzMywiZXhwIjoxNjM0NjUwMDMzfQ.jfEnQkg3oyRZLdRQeXCNRU5DECZ9cjUk8COWbaktIi8
+    metaSortKey: -1631131810199.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b5ff8b426af940e59aeb7b12aed5b925
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1633283205921
+    created: 1633282916543
+    url: http://localhost:9091/api/v1/user/listUsers
+    name: getAllUsers
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1630992628836.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cd4c8ceaf9a7479284bd592a77b15e78
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634351143573
+    created: 1633283066664
+    url: http://localhost:9091/api/v1/user
+    name: createUser
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "id": "DJOI208",
+            "name": "Jason Le",
+            "nickname": "Jale",
+            "email": "jason_le@gmail.com",
+            "password": "password"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_221690ac5d124f56a5b4cb59c6e79ead
+    authentication: {}
+    metaSortKey: -1630853152714.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_df407bc59b9c4b1aaca5af996e759581
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634351145619
+    created: 1634348953566
+    url: http://localhost:9091/api/v1/login
+    name: signInUser
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "jason_le@gmail.com",
+        	"password": "password"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_79c9f7df02054573b5625111580cac9e
+    authentication: {}
+    metaSortKey: -1630783414653.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0470665be1d64559a2c9340eac4d4820
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634351147250
+    created: 1633999417879
+    url: http://localhost:9091/api/v1/backpack
+    name: createObject
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cdRfid": "CTX1257",
+        		"name": "Estojo",
+        		"category": "Escola",
+        		"user": {
+        			"id": "DJOI208",
+        			"name": "Jason Le",
+        			"nickname": "Jale",
+        			"email": "jason_le@gmail.com",
+        			"password":"password"
+        		}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_221690ac5d124f56a5b4cb59c6e79ead
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTb2ZpYSBCYWcgQVBJIiwic3ViIjoiREpPSTIwOCIsImlhdCI6MTYzNDM1MDAzMywiZXhwIjoxNjM0NjUwMDMzfQ.jfEnQkg3oyRZLdRQeXCNRU5DECZ9cjUk8COWbaktIi8
+    metaSortKey: -1630748545622.5625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d3e83fb12b5145088cb2e9be729d4e22
+    parentId: fld_37ef2e72e178490bbba396757902ea33
+    modified: 1634088326522
+    created: 1630713676592
+    url: http://localhost:9091/api/v1/calendar
+    name: createReminder
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "RE_1258",
+        	"reminderDate": "2021-10-12",
+        	"reminderHour": "10:10:00",
+        	"repeatType": "0",
+        	"object": {
+        		"cdRfid": "CTX1257",
+        		"name": "Estojo",
+        		"category": "Escola",
+        		"user": {
+        			"id": "DJOI208",
+        			"name": "Jason Le",
+        			"nickname": "Jale",
+        			"email": "jason_le@gmail.com",
+        			"password":"password"
+        		}
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_221690ac5d124f56a5b4cb59c6e79ead
+    authentication: {}
+    metaSortKey: -1630713676592
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_1c7e5baea39cd271ae74bcce2ad8a384cf64b480
+    parentId: wrk_7bc20acbddf5470a93cbde59ae58f51f
+    modified: 1621039866048
+    created: 1621039866048
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1621039866048
+    _type: environment
+  - _id: jar_1c7e5baea39cd271ae74bcce2ad8a384cf64b480
+    parentId: wrk_7bc20acbddf5470a93cbde59ae58f51f
+    modified: 1621623385267
+    created: 1621039866052
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: 4aH0rF4-wwBOrVkhS5q8U4fYeZOBCuW5ky3iog48.laptop-48c4cf99
+        domain: localhost
+        path: /progamer
+        hostOnly: true
+        creation: 2021-05-21T18:56:25.127Z
+        lastAccessed: 2021-05-21T18:56:25.127Z
+        id: "8466345935197452"
+    _type: cookie_jar
+  - _id: spc_50220010f7dc4b4a9efc4d40eaddcdaa
+    parentId: wrk_7bc20acbddf5470a93cbde59ae58f51f
+    modified: 1621039865959
+    created: 1621039865959
+    fileName: Insomnia
+    contents: ""
+    contentType: yaml
+    _type: api_spec
